@@ -3,15 +3,24 @@ define oyama = "绪山"
 define kotone = "琴"
 define hoshizora = "星空"
 
-image hoshizora_default = "Hoshizora/hoshizora_default.png"
+image bcg_starysky = "background/starysky.png"
+
+image chr_hoshizora_default = "characters/Hoshizora/hoshizora_default.png"
 
 label start:
 
     # TODO: 序幕
 
-    show hoshizora_default
-    "蓝色的及腰头发，可爱的猫耳朵，无论如何都保持着最完美的笑容，脸蛋和身材都让人癫狂，永远穿着如同星海一样的小裙子，雌雄莫辨，出道一年就凭借出色的唱功和独特的风格在Y上狂揽100万粉丝的超级idol，星空喵，却在出了第一张专辑，准备在最大的运动场开始自己的全国巡演生涯first live的鼎盛时期，从舞台上凭空消失了。"
-    hide hoshizora_default
+    scene bcg_starysky
+    show chr_hoshizora_default
+    "蓝色的及腰头发，可爱的猫耳朵，无论如何都保持着最完美的笑容，脸蛋和身材都让人癫狂，永远穿着如同星海一样的小裙子，雌雄莫辨，出道一年就凭借出色的唱功和独特的风格在Youtube上狂揽100万粉丝的超级idol，星空喵"
+    "却在出了第一张专辑，准备在最大的运动场开始自己的全国巡演生涯first live的鼎盛时期，从舞台上凭空消失了。"
+    hide chr_hoshizora_default
+
+    
+    with fade
+    hide bcg_starysky
+
 
     oyama "琴，琴！下来吃饭了！ "
 

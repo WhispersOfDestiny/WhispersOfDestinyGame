@@ -1,13 +1,13 @@
-Wed Nov 29 19:04:27 2023
+Wed Nov 29 19:26:57 2023
 Linux-6.5.5-arch1-1-x86_64-with-glibc2.38
 Ren'Py 8.2.0.0+unofficial
  
 
-Bootstrap to the start of init.init. took 0.02s
+Bootstrap to the start of init.init. took 0.01s
 Early init. took 0.00s
 Loader init. took 0.00s
 Loading error handling. took 0.01s
-Loading script. took 0.04s
+Loading script. took 0.03s
 Loading save slot metadata. took 0.01s
 Loading persistent. took 0.00s
 Traceback (most recent call last):
@@ -55,15 +55,15 @@ Creating interface object. took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.02s
 Build styles took 0.00s
-Load screen analysis took 0.00s
+Load screen analysis took 0.01s
 Analyze screens took 0.00s
-Save screen analysis took 0.01s
+Save screen analysis took 0.00s
 Prepare screens took 0.02s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
+Save bytecode. took 0.03s
 Running _start took 0.00s
 Performance test:
-Interface start. took 0.03s
+Interface start. took 0.04s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
