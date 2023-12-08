@@ -32,6 +32,8 @@ Created by glueon233, hzrr.
 
 HomeBackground: ふぷめろ@mirusenn0
 
+<a href="http://example.com">test</a>
+
 游戏发布页: [点击访问](https://github.com/WhispersOfDestiny/WhispersOfDestinyGame/releases)
 """)
 

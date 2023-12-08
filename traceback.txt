@@ -1,77 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <renpy.display.im.Image object ('Hoshizora/characters/Hoshizora/hoshizora_default.png') at 0x7f76d8e1ee50>:
-  File "game/script.rpy", line 16, in script
-    "蓝色的及腰头发，可爱的猫耳朵，无论如何都保持着最完美的笑容，脸蛋和身材都让人癫狂，永远穿着如同星海一样的小裙子，雌雄莫辨，出道一年就凭借出色的唱功和独特的风格在Y上狂揽100万粉丝的超级idol，星空喵"
-  File "renpy/common/000window.rpy", line 114, in _window_auto_callback
-    _window_show(auto=True)
-  File "renpy/common/000window.rpy", line 451, in _window_show
-OSError: Couldn't find file 'Hoshizora/characters/Hoshizora/hoshizora_default.png'.
+While running game code:
+  File "game/script.rpy", line 144, in script
+    unknown "啊啊啊有鬼啊！"
+Exception: Sayer 'unknown' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 16, in script
-    "蓝色的及腰头发，可爱的猫耳朵，无论如何都保持着最完美的笑容，脸蛋和身材都让人癫狂，永远穿着如同星海一样的小裙子，雌雄莫辨，出道一年就凭借出色的唱功和独特的风格在Y上狂揽100万粉丝的超级idol，星空喵"
-  File "/usr/share/renpy/renpy/ast.py", line 900, in execute
-    statement_name("say")
-  File "/usr/share/renpy/renpy/ast.py", line 47, in statement_name
-    i(name)
-  File "renpy/common/000window.rpy", line 114, in _window_auto_callback
-    _window_show(auto=True)
-  File "renpy/common/000window.rpy", line 451, in _window_show
-  File "/usr/share/renpy/renpy/exports.py", line 1758, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "/usr/share/renpy/renpy/display/core.py", line 2978, in do_with
-    return self.interact(trans_pause=True,
-  File "/usr/share/renpy/renpy/display/core.py", line 3582, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "/usr/share/renpy/renpy/display/core.py", line 4175, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "/usr/share/renpy/renpy/display/core.py", line 2782, in draw_screen
-    surftree = renpy.display.render.render_screen(
-  File "render.pyx", line 492, in renpy.display.render.render_screen
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "/usr/share/renpy/renpy/display/layout.py", line 888, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "/usr/share/renpy/renpy/display/transition.py", line 377, in render
-    bottom = render(self.old_widget, width, height, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "/usr/share/renpy/renpy/display/layout.py", line 888, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "/usr/share/renpy/renpy/display/layout.py", line 888, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "/usr/share/renpy/renpy/display/transform.py", line 909, in render
-    return RenderTransform(self).render(width, height, st, at)
-  File "accelerator.pyx", line 979, in renpy.display.accelerator.RenderTransform.render
-  File "accelerator.pyx", line 404, in renpy.display.accelerator.RenderTransform.render_child
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "/usr/share/renpy/renpy/display/image.py", line 513, in render
-    return wrap_render(self.target, width, height, st, at)
-  File "/usr/share/renpy/renpy/display/image.py", line 316, in wrap_render
-    rend = render(child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "/usr/share/renpy/renpy/display/im.py", line 676, in render
-    return cache.get(self, render=True)
-  File "/usr/share/renpy/renpy/display/im.py", line 330, in get
-    surf = image.load()
-  File "/usr/share/renpy/renpy/display/im.py", line 803, in load
-    raise e
-  File "/usr/share/renpy/renpy/display/im.py", line 757, in load
-    filelike = renpy.loader.load(self.filename, directory="images")
-  File "/usr/share/renpy/renpy/loader.py", line 833, in load
-    raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'Hoshizora/characters/Hoshizora/hoshizora_default.png'.
+  File "game/script.rpy", line 144, in script
+    unknown "啊啊啊有鬼啊！"
+  File "/usr/share/renpy/renpy/ast.py", line 890, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "/usr/share/renpy/renpy/ast.py", line 783, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'unknown' is not defined.
 
 Linux-6.5.5-arch1-1-x86_64-with-glibc2.38 x86_64
 Ren'Py 8.2.0.0+unofficial
 運命のささやき: 私のそばに降り立つ星空ニャン 1.0
-Wed Nov 29 19:23:18 2023
+Wed Nov 29 20:45:21 2023
